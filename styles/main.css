@@ -1,0 +1,118 @@
+/* Custom property */
+:root {
+    --accent-color: #800000;
+}
+
+/* Reset and default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid var(--accent-color);
+}
+
+h1, h2, h3, p, ul {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+a:hover, a:focus {
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: 105%;
+}
+
+/* Header */
+header {
+    border-bottom: 2px solid var(--accent-color);
+    background: linear-gradient(
+        30deg,
+        #f6bb73 0%,
+        white 30%,
+        white 65%,
+        #f6bb73 100%
+    );
+}
+
+header h2 {
+    font-size: 175%;
+    padding-bottom: 0;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    padding-bottom: 1em;
+}
+
+header img {
+    float: left;
+    margin: .75em 1em;
+}
+
+/* Main */
+main {
+    clear: left;
+    padding: 0 1em 1em;
+}
+
+main h1 {
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 2em;
+}
+
+main img {
+    border: 4px double var(--accent-color);
+    border-radius: 10px;
+}
+
+/* Bonus: rounded guest heading */
+main h1 {
+    border-radius: 10px;
+    padding-left: .5em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent-color);
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
+
+/* CSS class */
+.large {
+    font-size: 125%;
+}
